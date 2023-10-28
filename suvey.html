@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<link href="mudBloom.css" rel="stylesheet" type="text/css">
+<title>Share your story</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="navigation">
+<ul>
+<li class="link"><a href="mudBloom.html">Home</a></li><br>
+<li class="link"><a href="mbHiking.html">Hiking</a></li><br>
+<li class="link"><a href="trails.html">Trails</a></li><br>
+<li class="link"><a href="gear.html">Gear</a></li><br>
+<li class="link"><a href="survey.html">Share your story!</a></li><br>
+<li class="link"><a href="mailto:jeanette.armyvet@outlook.com">Contact us</a></li><br>
+</ul>
+</div>
+
+<div class="content">
+
+<h2>Share Your Story!</h2>
+
+<p>Would you like to be featured in next month's guest blog post?</p>
+
+<p>Perhaps you've been exploring the outdoors or finding new physically demanding activites that have given you a renewed sense of self. We'd like to hear how outdoors or physical experience has improved your health.</P>
+
+<div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Full Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="fullname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">E-mail</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="email" name="email" placeholder="Your e-mail adress..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Country</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="mexico">Mexico</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Your Experience</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+
+</div>
+
+</body>
+</html>

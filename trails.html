@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<link href="mudBloom.css" rel="stylesheet" type="text/css">
+<title>Trail To-Do-List</title>
+</head>
+
+<body>
+
+<div class="navigation">
+<ul>
+<li class="link"><a href="mudBloom.html">Home</a></li><br>
+<li class="link"><a href="mbHiking.html">Hiking</a></li><br>
+<li class="link"><a href="trails.html">Trails</a></li><br>
+<li class="link"><a href="gear.html">Gear</a></li><br>
+<li class="link"><a href="survey.html">Share your story!</a></li><br>
+<li class="link"><a href="mailto:jeanette.armyvet@outlook.com">Contact us</a></li><br>
+</ul>
+</div>
+
+<div class="content">
+
+<dl>
+<h1><dt>Trails I want to hike this year:</dt></h1><br>
+<dd id="firstPlace">Half Dome via the John Muir Trail, Yosemite National Park</dd>
+<dd id="secondPlace">Soberanes Trail, Garrapata State Park</dd>
+<dd id="thirdPlace">Lands End Trail, Golden Gate National Recreation Area</dd>
+<dd id="fourthPlace">Fremont Peak and Valley View Loop Trail, Fremont Peak State Park</dd>
+</dl>
+
+<button id="changeList" type="button">
+Make Your Own Trail To-Do-List
+</button>
+<script>
+var item1;
+var item2;
+var item3;
+var item4;
+
+document.getElementById("changeList").onclick = newList;
+
+function newList(){
+item1 = prompt("Enter a new first place: ");
+item2 = prompt("Enter a new second place: ");
+item3 = prompt("Enter a new third place: ");
+item4 = prompt("Enter a new fourth place: ");
+updateList();
+}
+
+function updateList(){
+document.getElementById("firstPlace").innerHTML=item1;
+document.getElementById("secondPlace").innerHTML=item2;
+document.getElementById("thirdPlace").innerHTML=item3;
+document.getElementById("fourthPlace").innerHTML=item4;
+}
+</script>
+
+</body>
+</html>
+
+</div>
+
+</body>
+</html>
